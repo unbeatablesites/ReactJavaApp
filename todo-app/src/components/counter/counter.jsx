@@ -14,7 +14,7 @@ class Counter extends Component {
     // const style = { fontSize: '50px', padding: '15px 30px' };
     return (
       <div className='counter'>
-        <button onClick={this.increment}>+1</button>
+        <button onClick={this.increment}>+{this.props.by}</button>
         {/* // refers to the method or function */}
         <span className='count'>{this.state.counter}</span>
         {/* refers to the constructor "uses super first" */}
