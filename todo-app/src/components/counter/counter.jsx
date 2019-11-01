@@ -7,26 +7,24 @@ class Counter extends Component {
     this.state = {
       counter: 0
     };
-    // this.increment = this.increment.bind(this);
+    this.increment = this.increment.bind(this);
   }
 
-  render = () => {
+  render() {
     // const style = { fontSize: '50px', padding: '15px 30px' };
     return (
       <div className='counter'>
         <button onClick={this.increment}>+{this.props.by}</button>
-        {/* // refers to the method or function */}
         <span className='count'>{this.state.counter}</span>
-        {/* refers to the constructor "uses super first" */}
       </div>
     );
-  };
-  increment = () => {
+  }
+  increment() {
     // console.log('increment');
     // this.state.counter++;
     this.setState({
-      counter: this.state.counter + 1
+      counter: this.state.counter.by + this.props.by
     });
-  };
+  }
 }
 export default Counter;
