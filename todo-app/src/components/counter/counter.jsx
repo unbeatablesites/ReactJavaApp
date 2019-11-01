@@ -23,7 +23,7 @@ class Counter extends Component {
     // console.log('increment');
     // this.state.counter++;
     this.setState({
-      counter: this.state.counter.by + this.props.by
+      counter: this.state.counter + this.props.by
     });
   }
 }
