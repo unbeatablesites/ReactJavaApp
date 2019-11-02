@@ -15,8 +15,8 @@ class Counter extends Component {
     return (
       <div className='counter'>
         <CounterButton by={1} incrementMethod={this.increment} />
-        <CounterButton by={5} />
-        <CounterButton by={10} />
+        <CounterButton by={5} incrementMethod={this.increment} />
+        <CounterButton by={10} incrementMethod={this.increment} />
       </div>
     );
   }
