@@ -20,8 +20,8 @@ class Counter extends Component {
       </div>
     );
   }
-  increment() {
-    console.log('increment for parent');
+  increment(by) {
+    console.log(`increment for parent - ${by}`);
     // this.state.counter++;
     // this.setState({
     //   counter: this.state.counter
@@ -54,6 +54,7 @@ class CounterButton extends Component {
     this.setState({
       counter: this.state.counter + this.props.by
     });
+    this.props.incrementMethod(this.props.by);
   }
 }
 CounterButton.defaultProps = {
