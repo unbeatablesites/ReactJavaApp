@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import './Counter.css';
 
 class Counter extends Component {
@@ -27,11 +28,11 @@ class Counter extends Component {
     });
   }
 }
-CounterButton.defaultProps = {
+Counter.defaultProps = {
   by: 1
 };
 
-CounterButton.propTypes = {
+Counter.propTypes = {
   by: PropTypes.number
 };
 export default Counter;
