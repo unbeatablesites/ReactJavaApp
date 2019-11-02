@@ -27,4 +27,11 @@ class Counter extends Component {
     });
   }
 }
+CounterButton.defaultProps = {
+  by: 1
+};
+
+CounterButton.propTypes = {
+  by: PropTypes.number
+};
 export default Counter;
