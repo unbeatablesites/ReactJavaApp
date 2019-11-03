@@ -9,14 +9,27 @@ class Counter extends Component {
       counter: 0
     };
     this.increment = this.increment.bind(this);
+    this.decrement = this.decrement.bind(this);
   }
 
   render() {
     return (
       <div className='counter'>
-        <CounterButton by={1} incrementMethod={this.increment} />
-        <CounterButton by={5} incrementMethod={this.increment} />
-        <CounterButton by={10} incrementMethod={this.increment} />
+        <CounterButton
+          by={1}
+          incrementMethod={this.increment}
+          decrementMethod={this.decrement}
+        />
+        <CounterButton
+          by={5}
+          incrementMethod={this.increment}
+          decrementMethod={this.decrement}
+        />
+        <CounterButton
+          by={10}
+          incrementMethod={this.increment}
+          decrementMethod={this.decrement}
+        />
         <span className='count'>{this.state.counter}</span>
       </div>
     );
@@ -28,17 +41,15 @@ class Counter extends Component {
       return { counter: prevState.counter + by };
     });
   }
-}
 
-decrement(by) {
-  console.log(`decrement from child - ${by}`);
-  // this.state.counter++;
-  this.setState(prevState => {
-    return { counter: prevState.counter - by }
+  decrement(by) {
+    console.log(`decrement from child - ${by}`);
+    // this.state.counter++;
+    this.setState(prevState => {
+      return { counter: prevState.counter - by };
+    });
   }
-  );
 }
-
 class CounterButton extends Component {
   constructor() {
     super();
