@@ -11,7 +11,7 @@ button {
   padding: 15px 30px;
 }
 
-button .reset {
+.reset {
   background-color: red;
   width: 200px;
 }
