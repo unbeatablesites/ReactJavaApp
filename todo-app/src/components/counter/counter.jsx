@@ -4,7 +4,7 @@ import './Counter.css';
 
 class Counter extends Component {
   constructor() {
-    super(); //Error 1
+    super();
 
     this.state = {
       counter: 0
