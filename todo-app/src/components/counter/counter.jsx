@@ -42,9 +42,7 @@ class Counter extends Component {
   }
 
   reset() {
-    this.setState(prevState => {
-      return { counter: 0 };
-    });
+    this.setState({ counter: 0 });
   }
 
   increment(by) {
