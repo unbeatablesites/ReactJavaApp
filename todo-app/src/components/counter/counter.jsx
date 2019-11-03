@@ -10,6 +10,7 @@ class Counter extends Component {
     };
     this.increment = this.increment.bind(this);
     this.decrement = this.decrement.bind(this);
+    this.reset = this.reset.bind(this);
   }
 
   render() {
@@ -32,11 +33,20 @@ class Counter extends Component {
         />
         <span className='count'>{this.state.counter}</span>
         <div>
-          <button className='reset'>Reset</button>
+          <button className='reset' onClick={this.reset}>
+            Reset
+          </button>
         </div>
       </div>
     );
   }
+
+  reset() {
+    this.setState(prevState => {
+      return { counter: 0 };
+    });
+  }
+
   increment(by) {
     console.log(`increment from child - ${by}`);
     // this.state.counter++;
