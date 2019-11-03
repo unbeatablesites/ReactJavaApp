@@ -31,7 +31,9 @@ class Counter extends Component {
           decrementMethod={this.decrement}
         />
         <span className='count'>{this.state.counter}</span>
-        <button>Reset</button>
+        <div>
+          <button>Reset</button>
+        </div>
       </div>
     );
   }
