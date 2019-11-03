@@ -32,7 +32,7 @@ class Counter extends Component {
         />
         <span className='count'>{this.state.counter}</span>
         <div>
-          <button>Reset</button>
+          <button className='reset'>Reset</button>
         </div>
       </div>
     );
