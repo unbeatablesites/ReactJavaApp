@@ -28,6 +28,13 @@ class Counter extends Component {
       return { counter: prevState.counter + by };
     });
   }
+  decrement(by) {
+    console.log(`increment from child - ${by}`);
+    // this.state.counter++;
+    this.setState(prevState => {
+      return { counter: prevState.counter - by };
+    });
+  }
 }
 
 class CounterButton extends Component {
@@ -37,6 +44,7 @@ class CounterButton extends Component {
       counter: 0
     };
     this.increment = this.increment.bind(this);
+    this.increment = this.decrement.bind(this);
   }
 
   render() {
