@@ -30,6 +30,15 @@ class Counter extends Component {
   }
 }
 
+decrement(by) {
+  console.log(`decrement from child - ${by}`);
+  // this.state.counter++;
+  this.setState(prevState => {
+    return { counter: prevState.counter - by }
+  }
+  );
+}
+
 class CounterButton extends Component {
   constructor() {
     super();
