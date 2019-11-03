@@ -54,7 +54,6 @@ class Counter extends Component {
   }
 
   decrement(by) {
-    //console.log(`increment from child - ${by}`)
     this.setState(prevState => {
       return { counter: prevState.counter - by };
     });
