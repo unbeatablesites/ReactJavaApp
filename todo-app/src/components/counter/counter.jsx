@@ -17,6 +17,7 @@ class Counter extends Component {
         <CounterButton by={1} incrementMethod={this.increment} />
         <CounterButton by={5} incrementMethod={this.increment} />
         <CounterButton by={10} incrementMethod={this.increment} />
+        <span className='count'>{this.state.counter}</span>
       </div>
     );
   }
