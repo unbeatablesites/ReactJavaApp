@@ -64,8 +64,6 @@ class Counter extends Component {
 
 class CounterButton extends Component {
   render() {
-    //render = () =>  {
-    //const style = {fontSize : "50px", padding : "15px 30px"};
     return (
       <div className='counter'>
         <button onClick={() => this.props.incrementMethod(this.props.by)}>
