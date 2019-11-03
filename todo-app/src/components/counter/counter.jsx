@@ -37,6 +37,7 @@ class CounterButton extends Component {
       counter: 0
     };
     this.increment = this.increment.bind(this);
+    this.decrement = this.decrement.bind(this);
   }
 
   render() {
@@ -55,6 +56,15 @@ class CounterButton extends Component {
       counter: this.state.counter + this.props.by
     });
     this.props.incrementMethod(this.props.by);
+  }
+
+  decrement() {
+    // console.log('increment');
+    // this.state.counter++;
+    this.setState({
+      counter: this.state.counter - this.props.by
+    });
+    this.props.decrementMethod(this.props.by);
   }
 }
 CounterButton.defaultProps = {
