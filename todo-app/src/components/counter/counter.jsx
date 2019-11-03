@@ -21,7 +21,7 @@ class Counter extends Component {
     );
   }
   increment(by) {
-    console.log(`increment for parent - ${by}`);
+    console.log(`increment from child - ${by}`);
     // this.state.counter++;
     // this.setState({
     //   counter: this.state.counter
