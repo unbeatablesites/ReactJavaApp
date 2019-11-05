@@ -9,9 +9,12 @@ class TodoApp extends Component {
 class LoginComponent extends Component {
   render() {
     return (
-     User Name: <input type="text" name="userName"/>
-     Password: <input type="password" name="password"/>
-    )
+      <div>
+        User Name: <input type='text' name='userName' />
+        Password: <input type='password' name='password' />
+        <button>Login Button</button>
+      </div>
+    );
   }
 }
 
