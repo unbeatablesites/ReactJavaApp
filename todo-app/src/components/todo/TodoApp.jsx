@@ -5,6 +5,7 @@ class TodoApp extends Component {
     return (
       <div className='TodoApp'>
         <LoginComponent />
+        <WelcomeComponent />
       </div>
     );
   }
@@ -12,8 +13,7 @@ class TodoApp extends Component {
 
 class WelcomeComponent extends Component {
   render() {
-    return;
-    <div>This is the welcome Page</div>;
+    return <div>This is the welcome Page</div>;
   }
 }
 
