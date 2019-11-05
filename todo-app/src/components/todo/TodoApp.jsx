@@ -34,7 +34,9 @@ class LoginComponent extends Component {
   //   this.setState({ password: event.target.value });
   // }
 
-  loginClick() {}
+  loginClick() {
+    console.log('Working');
+  }
 
   render() {
     return (
