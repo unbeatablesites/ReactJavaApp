@@ -50,7 +50,7 @@ class LoginComponent extends Component {
           value={this.setState.password}
           onChange={this.handleChange}
         />
-        <button>Login Button</button>
+        <button onClick={this.loginClick}>Login Button</button>
       </div>
     );
   }
