@@ -19,6 +19,10 @@ class LoginComponent extends Component {
     };
   }
 
+  handleUserChange(event) {
+    console.log(event);
+  }
+
   render() {
     return (
       <div>
@@ -27,7 +31,7 @@ class LoginComponent extends Component {
           type='text'
           name='userName'
           value={this.setState.userName}
-          onChange={this.handleChange}
+          onChange={this.handleUserChange}
         />
         Password:{' '}
         <input type='password' name='password' value={this.setState.password} />
