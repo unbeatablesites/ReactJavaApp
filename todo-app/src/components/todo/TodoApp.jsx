@@ -21,7 +21,7 @@ class LoginComponent extends Component {
     this.handlePasswordChange = this.handlePasswordChange.bind(this);
   }
 
-  handleUserChange(event) {
+  handleChange(event) {
     console.log(event.target.value);
     this.setState({
       [event.target.value]: event.target.value
