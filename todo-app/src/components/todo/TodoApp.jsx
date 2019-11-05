@@ -8,7 +8,10 @@ class TodoApp extends Component {
 
 class LoginComponent extends Component {
   render() {
-    return <div className='TodoApp'>Login component </div>;
+    return (
+     User Name: <input type="text" name="userName"/>
+     Password: <input type="password" name="password"/>
+    )
   }
 }
 
