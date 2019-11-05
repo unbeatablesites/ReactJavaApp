@@ -41,6 +41,8 @@ class LoginComponent extends Component {
   render() {
     return (
       <div>
+        <div>Invalid Credentials</div>
+        <div>Login Successful</div>
         User Name:{' '}
         <input
           type='text'
