@@ -36,8 +36,9 @@ class LoginComponent extends Component {
 
   loginClick() {
     if (this.state.userName === 'Frank' && this.state.password === 'Frank') {
+      console.log('Successful Login');
     }
-    console.log('Working');
+    console.log(this.state);
   }
 
   render() {
