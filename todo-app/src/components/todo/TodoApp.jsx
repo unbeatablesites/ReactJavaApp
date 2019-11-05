@@ -28,10 +28,10 @@ class LoginComponent extends Component {
     });
   }
 
-  handlePasswordChange(event) {
-    console.log(event.target.value);
-    this.setState({ password: event.target.value });
-  }
+  // handlePasswordChange(event) {
+  //   console.log(event.target.value);
+  //   this.setState({ password: event.target.value });
+  // }
 
   render() {
     return (
