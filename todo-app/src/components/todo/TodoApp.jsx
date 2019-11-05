@@ -35,6 +35,8 @@ class LoginComponent extends Component {
   // }
 
   loginClick() {
+    if (this.state.userName === 'Frank' && this.state.password === 'Frank') {
+    }
     console.log('Working');
   }
 
