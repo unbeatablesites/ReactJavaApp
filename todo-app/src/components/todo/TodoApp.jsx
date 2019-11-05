@@ -15,7 +15,9 @@ class LoginComponent extends Component {
     super(props);
     this.state = {
       userName: 'Frank',
-      password: ''
+      password: '',
+      loginFail: false,
+      loginPassed: false
     };
     this.handleChange = this.handleChange.bind(this);
     this.loginClick = this.loginClick.bind(this);
@@ -36,7 +38,8 @@ class LoginComponent extends Component {
 
   loginClick() {
     if (this.state.userName === 'Frank' && this.state.password === 'Frank') {
-      console.log('Successful Login');
+      console.log('Successful Loging!');
+      this.setState({ showSuccessMessage: true });
     } else console.log('Failed');
   }
 
