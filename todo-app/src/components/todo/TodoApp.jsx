@@ -8,7 +8,7 @@ class TodoApp extends Component {
 
 class LoginComponent extends Component {
   render() {
-    return <div>Login component </div>;
+    return <div className='TodoApp'>Login component </div>;
   }
 }
 
