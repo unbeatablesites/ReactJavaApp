@@ -53,7 +53,8 @@ class LoginComponent extends Component {
       <div>
         {/* <ShowInvalidCredentials loginFail={this.state.loginFail} /> */}
         {this.state.loginFail && <div>Invalid Credentials</div>}
-        <ShowGoodCredentials loginPassed={this.state.loginPassed} />
+        {this.state.loginFail && <div>Invalid Credentials</div>}
+        {/* <ShowGoodCredentials loginPassed={this.state.loginPassed} /> */}
         User Name:{' '}
         <input
           type='text'
