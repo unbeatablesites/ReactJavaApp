@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 
-class Todo extends Component {
+class TodoApp extends Component {
   render() {
-    return <div className='TodoApp'>!!</div>;
+    return <div className='TodoApp'></div>;
   }
 }
-export default Todo;
+export default TodoApp;
