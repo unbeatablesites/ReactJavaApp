@@ -52,6 +52,7 @@ class LoginComponent extends Component {
     return (
       <div>
         <ShowInvalidCredentials loginFail={this.state.loginFail} />
+        <ShowGoodCredentials loginPassed={this.state.loginPassed} />
         User Name:{' '}
         <input
           type='text'
@@ -77,6 +78,14 @@ function ShowInvalidCredentials(props) {
     return <div>Invalid Credentials</div>;
   } else {
     return <div>Login Successful</div>;
+  }
+}
+
+function ShowGoodCredentials(props) {
+  if (props.loginPassed === true) {
+    return <div>Invalid Successful</div>;
+  } else {
+    return <div>Login Credentials</div>;
   }
 }
 
