@@ -14,7 +14,7 @@ class LoginComponent extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      userName: 'Enter username',
+      userName: 'Frank',
       password: ''
     };
     this.handleChange = this.handleChange.bind(this);
@@ -37,8 +37,7 @@ class LoginComponent extends Component {
   loginClick() {
     if (this.state.userName === 'Frank' && this.state.password === 'Frank') {
       console.log('Successful Login');
-    }
-    console.log(this.state);
+    } else console.log('Failed');
   }
 
   render() {
