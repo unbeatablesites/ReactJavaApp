@@ -75,20 +75,4 @@ class LoginComponent extends Component {
   }
 }
 
-function ShowInvalidCredentials(props) {
-  if (props.loginFail === true) {
-    return <div>Invalid Credentials</div>;
-  } else {
-    return null;
-  }
-}
-
-function ShowGoodCredentials(props) {
-  if (props.loginPassed === true) {
-    return <div>Login Successful!</div>;
-  } else {
-    return null;
-  }
-}
-
 export default TodoApp;
