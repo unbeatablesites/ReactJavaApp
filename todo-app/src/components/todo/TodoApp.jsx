@@ -23,7 +23,12 @@ class LoginComponent extends Component {
     return (
       <div>
         User Name:{' '}
-        <input type='text' name='userName' value={this.setState.userName} />
+        <input
+          type='text'
+          name='userName'
+          value={this.setState.userName}
+          onChange={this.handleChange}
+        />
         Password:{' '}
         <input type='password' name='password' value={this.setState.password} />
         <button>Login Button</button>
