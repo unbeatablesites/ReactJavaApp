@@ -77,7 +77,7 @@ function ShowInvalidCredentials(props) {
   if (props.loginFail === true) {
     return <div>Invalid Credentials</div>;
   } else {
-    return <div>Login Successful</div>;
+    return null;
   }
 }
 
@@ -85,7 +85,7 @@ function ShowGoodCredentials(props) {
   if (props.loginPassed === true) {
     return <div>Invalid Successful</div>;
   } else {
-    return <div>Login Credentials</div>;
+    return null;
   }
 }
 
