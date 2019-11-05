@@ -41,14 +41,14 @@ class LoginComponent extends Component {
           type='text'
           name='userName'
           value={this.setState.userName}
-          onChange={this.handleUserChange}
+          onChange={this.handleChange}
         />
         Password:{' '}
         <input
           type='password'
           name='password'
           value={this.setState.password}
-          onChange={this.handlePasswordChange}
+          onChange={this.handleChange}
         />
         <button>Login Button</button>
       </div>
