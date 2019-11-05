@@ -18,6 +18,7 @@ class LoginComponent extends Component {
       password: ''
     };
     this.handleChange = this.handleChange.bind(this);
+    this.loginClick = this.loginClick.bind(this);
     // this.handlePasswordChange = this.handlePasswordChange.bind(this);
   }
 
@@ -32,6 +33,8 @@ class LoginComponent extends Component {
   //   console.log(event.target.value);
   //   this.setState({ password: event.target.value });
   // }
+
+  loginClick() {}
 
   render() {
     return (
