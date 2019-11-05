@@ -21,20 +21,13 @@ class LoginComponent extends Component {
     };
     this.handleChange = this.handleChange.bind(this);
     this.loginClick = this.loginClick.bind(this);
-    // this.handlePasswordChange = this.handlePasswordChange.bind(this);
   }
 
   handleChange(event) {
-    // console.log(this.state);
     this.setState({
       [event.target.name]: event.target.value
     });
   }
-
-  // handlePasswordChange(event) {
-  //   console.log(event.target.value);
-  //   this.setState({ password: event.target.value });
-  // }
 
   loginClick() {
     if (this.state.userName === 'Frank' && this.state.password === 'Frank') {
@@ -51,10 +44,8 @@ class LoginComponent extends Component {
   render() {
     return (
       <div>
-        {/* <ShowInvalidCredentials loginFail={this.state.loginFail} /> */}
         {this.state.loginFail && <div>Invalid Credentials</div>}
         {this.state.loginPassed && <div>Login Successful!</div>}
-        {/* <ShowGoodCredentials loginPassed={this.state.loginPassed} /> */}
         User Name:{' '}
         <input
           type='text'
