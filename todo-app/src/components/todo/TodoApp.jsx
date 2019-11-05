@@ -18,11 +18,17 @@ class LoginComponent extends Component {
       password: ''
     };
     this.handleUserChange = this.handleUserChange.bind(this);
+    this.handlePasswordChange = this.handlePasswordChange.bind(this);
   }
 
   handleUserChange(event) {
     console.log(event.target.value);
     this.setState({ userName: event.target.value });
+  }
+
+  handlePasswordChange(event) {
+    console.log(event.target.value);
+    this.setState({ password: event.target.value });
   }
 
   render() {
@@ -36,7 +42,12 @@ class LoginComponent extends Component {
           onChange={this.handleUserChange}
         />
         Password:{' '}
-        <input type='password' name='password' value={this.setState.password} />
+        <input
+          type='password'
+          name='password'
+          value={this.setState.password}
+          onChange={this.handlePasswordChange}
+        />
         <button>Login Button</button>
       </div>
     );
