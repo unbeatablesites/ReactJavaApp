@@ -45,9 +45,11 @@ class LoginComponent extends Component {
 
   loginClick() {
     if (this.state.userName === 'Frank' && this.state.password === 'Frank') {
-      console.log('Successful Loging!');
-      this.setState({ loginPassed: true });
-      this.setState({ loginFail: false });
+      // console.log('Successful Loging!');
+      // this.setState({ loginPassed: true });
+      // this.setState({ loginFail: false });
+
+      this.props.history.push('/welcome');
     } else {
       console.log('Failed Loging!');
       this.setState({ loginPassed: false });
