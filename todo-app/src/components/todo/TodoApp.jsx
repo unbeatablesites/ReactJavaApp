@@ -27,7 +27,7 @@ class WelcomeComponent extends Component {
 
 function ErrorComponent() {
   return (
-    <div> I don't know what to do. Please Contact Support @ Fran Uzoka </div>
+    <div> I don't know what to do. Please Contact Support @ Frank Uzoka </div>
   );
 }
 
