@@ -26,7 +26,9 @@ class WelcomeComponent extends Component {
 }
 
 function ErrorComponent() {
-  return <div> I don't know what to do page. </div>;
+  return (
+    <div> I don't know what to do. Please Contact Support @ Fran Uzoka </div>
+  );
 }
 
 class LoginComponent extends Component {
