@@ -6,6 +6,7 @@ class TodoApp extends Component {
     return (
       <div className='TodoApp'>
         <Router>
+          <Route path='/' component={LoginComponent} />
           <Route path='/login' component={LoginComponent} />
           <Route path='/welcome' component={WelcomeComponent} />
         </Router>
