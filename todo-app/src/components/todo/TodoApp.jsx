@@ -15,9 +15,6 @@ class TodoApp extends Component {
             </Switch>
           </>
         </Router>
-
-        {/* <LoginComponent />
-        <WelcomeComponent /> */}
       </div>
     );
   }
